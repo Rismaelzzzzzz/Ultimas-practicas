@@ -72,7 +72,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['borrar_dato'])) {
         $mensaje = 'El archivo no existe o no tiene permisos de escritura.';
     }
 }
-$fp = fopen("datos1.txt", "a"); // "a" agrega al final sin borrar contenido previo
+$fp = fopen("datos1.txt", "a");
 fwrite($fp, " " . PHP_EOL);
 fclose($fp);
 
